@@ -9,5 +9,32 @@ To help mitigate the affects of Wide Area Network (WAN) connection losses, it it
    - identification of threshold breaches for pH etc. and the creation of the associated alarms.
    - structured data extraction from video and image data that can be sent independently of the bandwidth hungry multi-media data if necessary.
    - apply QoS metrics to the various data so that priority information such as alerts, are always sent ahead of less critical data, once connectivity is reestablished.
+The following schematic illustrates the concept of what we are aiming for:
+```mermaid
+graph TB    
+    subgraph Fish Farm Data feeds
+	    sysData>System Data ]--Low Volume<br/>System State--> sysProc
+	    sysProc(Anomaly Detection)
+        telData>Telemetry Data ]--High Volume<br/>Instrument Readings--> telProc
+        telProc(Sample/Batch/Compress)
+        media>Multi-media ]--Very High Volume<br/>Video/Images--> mediaProc
+        mediaProc(Sample/Compress<br/>Extract Structured Data)
+    end
+    subgraph Local Comms Processor
+	    queue[queue and send based on priorties]
+	    sysProc --> queue
+	    telProc --> queue
+	    mediaProc --> queue        
+    end
+	subgraph Cloud
+		cloud[Cloud Data Ingestion]
+		queue -.-> cloud		
+	end
+     classDef green fill:#9f6,stroke:#333,stroke-width:2px;
+     classDef orange fill:#FFBF00,stroke:#333,stroke-width:1px;
+     
+     class telProc,mediaProc,sysProc green
+     class queue orange
+```
 ## Consequences
 Processing data locally (at the farm) will entail deploying additional devices alongside those used for monitoring. These will need to be hardened to cope with the conditions and be able to run on relatively low power. This will add additional hardware costs to the project but should increase the reliability and usefulness of the system, especially in the face of intermittent WAN downtime.
