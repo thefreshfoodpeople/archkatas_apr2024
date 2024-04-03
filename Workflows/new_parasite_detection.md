@@ -20,14 +20,14 @@ sequenceDiagram
     participant cloud as Cloud Data Ingestion
     Note over cam,cloud: Camera unit can detect the presence of parasites
     cam->>+mediaProc: indicate parasite detected
-    mediaProc-->mediaProc: check parasite log
+    mediaProc->>mediaProc: check parasite log
     alt new type of parasite
 	    mediaProc->>queue: Queue High Priority Alert
 	else existing type of parasite
-	    mediaProc-->mediaProc: Log detection
+	    mediaProc->>mediaProc: Log detection
 	    mediaProc->>mediaProc: Check detection threshold
 	end
     alt threshold reached
-	    mediaProc-->-queue: Queue High Priority Alert
+	    mediaProc->>-queue: Queue High Priority Alert
     end
     queue->>+cloud: Send alerts
