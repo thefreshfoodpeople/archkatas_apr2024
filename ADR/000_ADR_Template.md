@@ -7,4 +7,4 @@ description of the problem and alternative solutions available
 ## Decision
 what is the decision and its justification (the why)
 ## Consequences
-trade-offs and impact of the decision+
+trade-offs and impact of the decision
