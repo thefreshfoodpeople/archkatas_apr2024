@@ -8,7 +8,7 @@ In order to support farmers with early warning of a potential new parasite infes
 
  - the underwater cameras have a data collection mechanism that can be linked to a local processing unit.
  - the underwater cameras can independently detect parasites and indicate this to the local processing unit.
- - the local message queue that will be used to send alerts to the cloud has an implementation based on the [Priority Queue Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/priority-queue) <span style="color:red;">*(add ADR link here)*</span>
+ - the local message queue that will be used to send alerts to the cloud has an implementation based on the [Priority Queue Pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/priority-queue) - see [002_ADR_Priority_Queue](../ADR/002_ADR_Priority_Queue.md)
 
 ## Sequence
 
