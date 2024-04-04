@@ -11,8 +11,8 @@ Fishwatch application works as a single integrated platform for overall fish far
 - Rugged industrial devices can be used by farmers during harvest
 
 ## Key Decisions
-[Edge Computing](ADR/001_ADR_Edge_Computing.md)
-[Priority Queue Pattern](ADR/002_ADR_Priority_Queue.md)
+- [Edge Computing](ADR/001_ADR_Edge_Computing.md)
+- [Priority Queue Pattern](ADR/002_ADR_Priority_Queue.md)
 
 
 ## Context Diagram
