@@ -25,11 +25,16 @@ advanced warnings of adverse weather events that are expected.
 ## Context Diagram
 
 ![The Fresh Food People's Fishy Watch architecture](Diagrams/FishyWatch-C4-final.jpeg "Fig. 1 - Fishy Watch Architecture")
-<p style="text-align: center;">Fig. 1 - Fishy Watch Architecture</p>
+**<p style="text-align: center;">Fig. 1 - Fishy Watch Architecture</p>**
 
 ## Components Diagram
 
-
 ### Data Processing
+
 ![Fishy Watch data processing approach](Diagrams/FishyWatch-Data-Processing-ADRs.jpeg "Fig. 2 - Fishy Watch Data Processing")
-<p style="text-align: center;">Fig. 2 - Fishy Watch Data Processing</p>
+**<p style="text-align: center;">Fig. 2 - Fishy Watch Data Processing</p>**
+
+### Database
+
+![Fishy Watch data persistence  approach](Diagrams/FishyWatch-Database-ADRs.jpeg "Fig. 1.2 - Fishy Watch Data Processing")
+**<p style="text-align: center;">Fig. 3 - Fishy Watch Data Persistence</p>**
