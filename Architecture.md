@@ -26,7 +26,7 @@ advanced warnings of adverse weather events that are expected.
 The following sections show the context and components of the Fishy Watch system. We used an Event Storming session to kick start the ideation of these ideas. The results of this are shown in Fig. 1 below.
 
 ![Event Storming for Fishy Watch](Diagrams/EventStorming.jpg "Fig. 1 - Fishy Watch Architecture")
-**<p style="text-align: center;">Fig. 1 - Fishy Watch Architecture</p>**
+**<p style="text-align: center;">Fig. 1 - Fishy Watch Event Storming</p>**
 
 ## Context Diagram
 
