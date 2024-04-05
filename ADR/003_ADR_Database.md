@@ -1,4 +1,4 @@
-# ADR003 - Use of NoSQL or SQL Database for the Fish Watch system services 
+# ADR003 - Use of Polygot persistence (NoSQL or SQL Database) depending on the service for the Fish Watch system  
 ## Status
 proposed
 ## Context
