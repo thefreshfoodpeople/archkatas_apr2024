@@ -1,4 +1,4 @@
-# Fishwatch Application 
+# Fishy Watch Application 
 ## Overview
 The Fishwatch application works as a single integrated platform for overall fish farm maintenance including water quality monitoring, weather monitoring & fish health monitoring.
 ## Functional Requirements
@@ -24,4 +24,12 @@ advanced warnings of adverse weather events that are expected.
 
 ## Context Diagram
 
+![The Fresh Food People's Fishy Watch architecture](Diagrams/FishyWatch-C4-final.jpeg "Fig. 1 - Fishy Watch Architecture")
+<p style="text-align: center;">Fig. 1 - Fishy Watch Architecture</p>
+
 ## Components Diagram
+
+
+### Data Processing
+![Fishy Watch data processing approach](Diagrams/FishyWatch-Data-Processing-ADRs.jpeg "Fig. 2 - Fishy Watch Data Processing")
+<p style="text-align: center;">Fig. 2 - Fishy Watch Data Processing</p>

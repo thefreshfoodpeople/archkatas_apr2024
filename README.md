@@ -31,7 +31,7 @@ We are fortunate to have access to some excellent collaboration tools within the
 The diagram below (Fig. 1 - Fishy Watch Architecture) shows the system C4 context and associated component diagrams for our proposed architecture. Please refer to [this architecture discussion](./Architecture.md) for details of how we arrived at this.
 
 ![The Fresh Food People's Fishy Watch architecture](Diagrams/FishyWatch-C4-final.jpeg "Fig. 1 - Fishy Watch Architecture")
-
+<p style="text-align: center;">Fig. 1 - Fishy Watch Architecture</p>
 The following diagrams show the Context areas along with the Architectural Design Records (ADRs) for the key decisions we made along the way.
 
 ### Edge Computing for onsite data processing
@@ -42,6 +42,7 @@ The following ADRs relate to how we process data onsite prior to upload to the c
 
 There association to the solution architecture is shown below (Fig. 2 - Fishy Watch Data Processing):
 ![Fishy Watch data processing approach](Diagrams/FishyWatch-Data-Processing-ADRs.jpeg "Fig. 2 - Fishy Watch Data Processing")
+<p style="text-align: center;">Fig. 2 - Fishy Watch Data Processing</p>
 
 This distributed approach to processing the data supports many uses cases, here are just a few:
 
