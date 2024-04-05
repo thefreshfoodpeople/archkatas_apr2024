@@ -109,6 +109,7 @@ sequenceDiagram
 ```
 
 #### [Asynchronous image request](Workflows/asynchronous_image_request.md)
+
 There are a number of reasons that a Fish Watch user (farmer, support engineer, etc.) may wish to obtain a still image or images from the underwater cameras. For example, a treatment for a particular parasite may have been administered and the user wishes to obtain some images of the fish to determine how effective the treatment was.
 In the low bandwidth, patchy environments we expect Fish Watch to be deployed in, there may be times when a synchronous response to such a request is not possible. It may be also the case that we which to control the rate at which these types of requests are processed. To this end, we will provide an API that will allow image requests to me queued and processed asynchronously.<br/>
 The sequence is as follows:
@@ -141,3 +142,17 @@ sequenceDiagram
     end
     queue->>+cloud: Send alerts
 ```
+
+## Bounded Contexts 
+
+We have identified a number of bounded context within the Fishy Watch domain. An initial analysis suggests those shown in Fig 3 below:
+
+![Fishy Watch Bounded Contexts](Diagrams/BoundedContexts/FishyWatch-BoundedContexts.jpeg "Fig. 3 - Fishy Watch Bounded Contexts")
+
+**<p style="text-align: center;">Fig. 3 - Fishy Watch Bounded Context</p>**
+
+A bounded context canvas for Farm Management is shown below in Fig 4.
+
+![Fishy Watch Farm Management Bounded Context](Diagrams/BoundedContexts/FarmManagement-BoundedContext.jpg "Fig. 4 - Fishy Watch Farm Management Bounded Context")
+
+**<p style="text-align: center;">Fig. 4 - Fishy Watch Farm Management Bounded Context Canvas </p>**
