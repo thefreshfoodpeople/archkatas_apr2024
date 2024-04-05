@@ -45,19 +45,16 @@ There association to the solution architecture is shown below (Fig. 2 - Fishy Wa
 
 This distributed approach to processing the data supports many uses cases, here are just a few:
 
-1. [Detecting threshold breaches and creating high priority alerts.](Workflows/telemetry_reading_threshold_breach.md)
-<br/>
+#### [Detecting threshold breaches and creating high priority alerts.](Workflows/telemetry_reading_threshold_breach.md)
+
 Farmers are interested when telemetry measurements (pH, temperature, salinity, oxygen levels etc.) go outside predefined bounds (thresholds). The thresholds are set by the farmers and may depend on location and the specifics of the geographical location of the farm.
 The system will generate alerts when these readings are outside of the pre-defined thresholds (subject to a configurable 'debouncing' approach) and send these as high priority to the farmer (and other subscribers).<br/>
 The sequence is as follows:
 
-    1.1. Telemetry is recieved from a sensor (e.g. pH level).
-
-    1.2. The signal is 'debounced' to reduce noise (e.g. filter out duplicate or very similar readings within a given minute).
-
-    1.3. Check the reading against the configured threshold(s). E.g pH between 6.8 and 7.2.
-    
-    1.4. Queue a high priority alert if the threshold is breached.
+1. Telemetry is recieved from a sensor (e.g. pH level).
+2. The signal is 'debounced' to reduce noise (e.g. filter out duplicate or very similar readings within a given minute).
+3. Check the reading against the configured threshold(s). E.g pH between 6.8 and 7.2.
+4. Queue a high priority alert if the threshold is breached.
 
 
 ```mermaid
@@ -77,21 +74,17 @@ sequenceDiagram
     queue->>+cloud: Send alerts
 ```
 
-2. [Detection of a type of parasite previously not seen at the enclosure](Workflows/new_parasite_detection.md)
-<br/>
+#### [Detection of a type of parasite previously not seen at the enclosure](Workflows/new_parasite_detection.md)
+
 In order to support farmers with early warning of a potential new parasite infestation, a workflow will be put in place to send an alert when a new type of parasite is detected.<br/>
 The sequence is as follows:
-    2.1. Camera detects a parasite.
 
-    2.2. Check the parasite against those previously detected at the enclosure.
-    
-    2.3. Queue a high priority alert if this is a new type of parasite for this enclosure.
-    
-    2.4. If its an existing type, check the threshold for a parasite count of this type.
-
-    2.5. Queue a high priority alert if we have breached the detection limit.
-
-    2.6. Send this and any other alerts to the cloud based on their priority.
+1. Camera detects a parasite.
+2. Check the parasite against those previously detected at the enclosure.
+3. Queue a high priority alert if this is a new type of parasite for this enclosure.
+4. If its an existing type, check the threshold for a parasite count of this type.
+5. Queue a high priority alert if we have breached the detection limit.
+6. Send this and any other alerts to the cloud based on their priority.
 
 ```mermaid
 sequenceDiagram
@@ -114,23 +107,18 @@ sequenceDiagram
     queue->>+cloud: Send alerts
 ```
 
-3. [Asynchronous image request](Workflows/asynchronous_image_request.md)<br/>
+#### [Asynchronous image request](Workflows/asynchronous_image_request.md)
 There are a number of reasons that a Fish Watch user (farmer, support engineer, etc.) may wish to obtain a still image or images from the underwater cameras. For example, a treatment for a particular parasite may have been administered and the user wishes to obtain some images of the fish to determine how effective the treatment was.
 In the low bandwidth, patchy environments we expect Fish Watch to be deployed in, there may be times when a synchronous response to such a request is not possible. It may be also the case that we which to control the rate at which these types of requests are processed. To this end, we will provide an API that will allow image requests to me queued and processed asynchronously.<br/>
 The sequence is as follows:
-    3.1. User requests an image via the UI.
 
-    3.2. The Request is stored by the API in the local request queue and a 202 Accepted response returned.
-
-    3.3. The request is sent to the camera.
-
-    3.4. The camera captures the image.
-
-    3.5. The image is wrapped in a message and placed on the outgoing queue.
-
-    3.6. The message is sent to the cloud and made available to the user.
-    
-    3.7. The user is notified of the image availability along with an access link.
+1. User requests an image via the UI.
+2. The Request is stored by the API in the local request queue and a 202 Accepted response returned.
+3. The request is sent to the camera.
+4. The camera captures the image.
+5. The image is wrapped in a message and placed on the outgoing queue.
+6. The message is sent to the cloud and made available to the user.
+7. The user is notified of the image availability along with an access link.
 
 ```mermaid
 sequenceDiagram
