@@ -4,7 +4,7 @@
 
 Hi!, We are the Fresh Food People. A group of Solution Architects from WooliesX, the Tech arm of Woolworths Australia. Our humble little band is made up of:
 
- - [Meena Kasi](https://www.linkedin.com/in/meenakasi/): Focused on the *Singular Customer View* capabilities within our  **Personalisation and Media Domain**
+ - [Meena Kasi](https://www.linkedin.com/in/meenakasi/): Focused on the *Single Customer View* capabilities within our  **Personalisation and Media Domain**
  - [Ranjeet Singh](https://www.linkedin.com/in/rsinghyadav/): Focused on the *Customer Comms - Targeted & Personalised* capabilities within our **Personalisation and Media Domain**
  - [Dhaval Kamdar](https://www.linkedin.com/in/dkamdar/): Focused on the *Insurance & Telco* capabilities within our **Everyday Domain**
  - [Kannan Avadaiappan](https://www.linkedin.com/in/avakannan/) : Focused on the *Product Data and Experience* capabilities within our **Plan & Shop Domain**
