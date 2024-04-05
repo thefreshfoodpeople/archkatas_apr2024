@@ -20,7 +20,7 @@ advanced warnings of adverse weather events that are expected.
 ## Key Decisions
 - [Edge Computing](ADR/001_ADR_Edge_Computing.md)
 - [Priority Queue Pattern](ADR/002_ADR_Priority_Queue.md)
-
+- [Polyglot Persistence](ADR/003_ADR_Database.md)
 
 ## Context Diagram
 

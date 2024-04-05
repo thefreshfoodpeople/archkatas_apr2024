@@ -28,10 +28,10 @@ We are fortunate to have access to some excellent collaboration tools within the
 
 ## System Architecture
 
-The diagram below (Fig. 1 - Fishy Watch Architecture) shows the system C4 context and associated component diagrams for our proposed architecture. Please refer to [this architecture discussion](./Architecture.md) for details of how we arrived at this.
+The diagram below (Fig. 1.1 - Fishy Watch Architecture) shows the system C4 context and associated component diagrams for our proposed architecture. Please refer to [this architecture discussion](./Architecture.md) for details of how we arrived at this.
 
-![The Fresh Food People's Fishy Watch architecture](Diagrams/FishyWatch-C4-final.jpeg "Fig. 1 - Fishy Watch Architecture")
-**<p style="text-align: center;">Fig. 1 - Fishy Watch Architecture</p>**
+![The Fresh Food People's Fishy Watch architecture](Diagrams/FishyWatch-C4-final.jpeg "Fig. 1.1 - Fishy Watch Architecture")
+**<p style="text-align: center;">Fig. 1.1 - Fishy Watch Architecture</p>**
 The following diagrams show the Context areas along with the Architectural Design Records (ADRs) for the key decisions we made along the way.
 
 ### Edge Computing for onsite data processing
@@ -40,9 +40,9 @@ The following ADRs relate to how we process data onsite prior to upload to the c
 - [Edge Computing](ADR/001_ADR_Edge_Computing.md)
 - [Priority Queue Pattern](ADR/002_ADR_Priority_Queue.md)
 
-There association to the solution architecture is shown below (Fig. 2 - Fishy Watch Data Processing):
-![Fishy Watch data processing approach](Diagrams/FishyWatch-Data-Processing-ADRs.jpeg "Fig. 2 - Fishy Watch Data Processing")
-**<p style="text-align: center;">Fig. 2 - Fishy Watch Data Processing</p>**
+Their association to the solution architecture is shown below (Fig. 1.2 - Fishy Watch Data Processing):
+![Fishy Watch data processing approach](Diagrams/FishyWatch-Data-Processing-ADRs.jpeg "Fig. 1.2 - Fishy Watch Data Processing")
+**<p style="text-align: center;">Fig. 1.2 - Fishy Watch Data Processing</p>**
 
 This distributed approach to processing the data supports many uses cases, here are just a few:
 
@@ -142,6 +142,15 @@ sequenceDiagram
     end
     queue->>+cloud: Send alerts
 ```
+
+### Polyglot Data Storage
+
+The following ADRs relate to how we store operational data for the various Fishy Watch microservices:
+- [Polyglot Persistance](ADR/003_ADR_Database.md)
+
+Their association to the solution architecture is shown below (Fig. 1.3 - Fishy Watch Data Persistence):
+![Fishy Watch data persistence  approach](Diagrams/FishyWatch-Database-ADRs.jpeg "Fig. 1.2 - Fishy Watch Data Processing")
+**<p style="text-align: center;">Fig. 1.3 - Fishy Watch Data Persistence</p>**
 
 ## Bounded Contexts 
 
