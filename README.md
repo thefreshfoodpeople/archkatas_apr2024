@@ -30,6 +30,6 @@ We are fortunate to have access to some excellent collaboration tools within the
 
 The diagram below shows the system C4 context and associated component diagrams for our proposed architecture. Please refer to [this architecture discussion](./Architecture.md) for details of how we arrived at this.
 
-![The Fresh Food People's Fishy Watch architecture](../Diagrams/FishyWatch-C4-final.jpeg "Fishy Watch Architecture")
+![The Fresh Food People's Fishy Watch architecture](Diagrams/FishyWatch-C4-final.jpeg "Fishy Watch Architecture")
 
 The following diagrams show the Context areas along with the Architectural Design Records (ADRs) for the key decisions we made along the way.
