@@ -24,3 +24,12 @@ The context, constraints and requirements are:
 ## The Tools
 
 We are fortunate to have access to some excellent collaboration tools within the WooliesX environment that help us work together to brainstorm, ideate and crystalize a solution to this challenge. Specifically we have used [Miro](https://miro.com/) to run a virtual [Event Storming](https://www.eventstorming.com/) session and develop a [Bounded Context](https://github.com/ddd-crew/bounded-context-canvas) view of the system. We also used  [Lucid Chart](https://www.lucidchart.com/pages/) to produce our [C4](https://c4model.com/) diagrams. 
+
+
+## System Architecture
+
+The diagram below shows the system C4 context and associated component diagrams for our proposed architecture. Please refer to [this architecture discussion](./Architecture.md) for details of how we arrived at this.
+
+![The Fresh Food People's Fishy Watch architecture](../Diagrams/FishyWatch-C4-Final.jpeg "Fishy Watch Architecture")
+
+The following diagrams show the Context areas along with the Architectural Design Records (ADRs) for the key decisions we made along the way.
