@@ -15,7 +15,7 @@ Hi!, We are the Fresh Food People. A group of Solution Architects from WooliesX,
 The task is to come up with a solution architecture for Fishy Watch, a system that will help farmers manage their fish stocks. The scenario is based on the Livestock Insights Incorporated company, headquartered in Scotland, but operating globally Their main service offering, Fishy Watch, is used by Fish Farmers around the world to monitor their fish, and the fish farms in general It is able to collect information about individual fish, water quality, and weather information Fish farmers use this information to understand the health of their livestock, check for signs of parasites and disease, and work out the best time to harvest
 The context, constraints and requirements are:
 
- - Each customer of Fish Watch may operate a number of fish farms in different geographical locations. Some customers might have a single farm, but the biggest clients have over a hundred. 
+ - Each customer of Fishy Watch may operate a number of fish farms in different geographical locations. Some customers might have a single farm, but the biggest clients have over a hundred. 
  - Each farm is split into different enclosures where the fish are kept. A small farm might have as few as ten enclosures, large farms may have a thousand or more. The biggest farms might have over a million fish. 
  - There are water monitors in each enclosure which capture water quality information including PH, temperature, salinity, oxygen levels and other factors 
  - Underwater cameras are positioned in each enclosure which can get a general view of fish health, looking at size, activity, and whether parasites are detected 
@@ -110,8 +110,8 @@ sequenceDiagram
 
 #### [Asynchronous image request](Workflows/asynchronous_image_request.md)
 
-There are a number of reasons that a Fish Watch user (farmer, support engineer, etc.) may wish to obtain a still image or images from the underwater cameras. For example, a treatment for a particular parasite may have been administered and the user wishes to obtain some images of the fish to determine how effective the treatment was.
-In the low bandwidth, patchy environments we expect Fish Watch to be deployed in, there may be times when a synchronous response to such a request is not possible. It may be also the case that we which to control the rate at which these types of requests are processed. To this end, we will provide an API that will allow image requests to me queued and processed asynchronously.<br/>
+There are a number of reasons that a Fishy Watch user (farmer, support engineer, etc.) may wish to obtain a still image or images from the underwater cameras. For example, a treatment for a particular parasite may have been administered and the user wishes to obtain some images of the fish to determine how effective the treatment was.
+In the low bandwidth, patchy environments we expect Fishy Watch to be deployed in, there may be times when a synchronous response to such a request is not possible. It may be also the case that we which to control the rate at which these types of requests are processed. To this end, we will provide an API that will allow image requests to me queued and processed asynchronously.<br/>
 The sequence is as follows:
 
 1. User requests an image via the UI.
