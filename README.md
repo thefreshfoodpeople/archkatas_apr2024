@@ -149,8 +149,16 @@ The following ADRs relate to how we store operational data for the various Fishy
 - [Polyglot Persistance](ADR/003_ADR_Database.md)
 
 Their association to the solution architecture is shown below (Fig. 1.3 - Fishy Watch Data Persistence):
-![Fishy Watch data persistence  approach](Diagrams/FishyWatch-Database-ADRs.jpeg "Fig. 1.2 - Fishy Watch Data Processing")
+![Fishy Watch data persistence  approach](Diagrams/FishyWatch-Database-ADRs.jpeg "Fig. 1.3 - Fishy Watch Data Processing")
 **<p style="text-align: center;">Fig. 1.3 - Fishy Watch Data Persistence</p>**
+
+### Application API (Service Composition/BFF/GraphQL)
+
+The following ADRs relate to how we simplify UI interactions with the microservice APIs:
+- [GraphQL for Service Composittion/Backend For Frontend (BFF)](ADR/004_ADR_GraphQL%20Federation.md)
+
+![Fishy Watch BFF approach](Diagrams/FishyWatch-BFF-ADRs.jpeg "Fig. 4 - Fishy Watch GraphQL")
+**<p style="text-align: center;">Fig. 4 - Fishy Watch Service Composition for UI</p>**
 
 ## Bounded Contexts 
 

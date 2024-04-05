@@ -37,5 +37,10 @@ advanced warnings of adverse weather events that are expected.
 
 ### Database
 
-![Fishy Watch data persistence  approach](Diagrams/FishyWatch-Database-ADRs.jpeg "Fig. 1.2 - Fishy Watch Data Processing")
+![Fishy Watch data persistence approach](Diagrams/FishyWatch-Database-ADRs.jpeg "Fig. 3 - Fishy Watch Data Processing")
 **<p style="text-align: center;">Fig. 3 - Fishy Watch Data Persistence</p>**
+
+### Application API (Service Composition/GraphQL/Backend For Frontend)
+
+![Fishy Watch BFF approach](Diagrams/FishyWatch-BFF-ADRs.jpeg "Fig. 4 - Fishy Watch GraphQL")
+**<p style="text-align: center;">Fig. 4 - Fishy Watch Service Composition for UI</p>**
