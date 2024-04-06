@@ -1,6 +1,6 @@
 # ADR003 - Use of Polygot persistence (NoSQL or SQL Database) depending on the service for the Fishy Watch system  
 ## Status
-proposed
+Accepted
 ## Context
 Choosing the right database for the Fishy Watch system services is crucial because it directly impacts the service's ability to scale, perform, and evolve over time. 
 
