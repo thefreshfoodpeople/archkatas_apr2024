@@ -3,8 +3,8 @@
 
 ## Context  
   
-There are a number of reasons that a Fish Watch user (farmer, support engineer, etc.) may wish to obtain a still image or images from the underwater cameras. For example, a treatment for a particular parasite may have been administered and the user wishes to obtain some images of the fish to determine how effective the treatment was.
-In the low bandwidth, patchy environments we expect Fish Watch to be deployed in, there may be times when a synchronous response to such a request is not possible. It may be also the case that we which to control the rate at which these types of requests are processed. To this end, we will provide an API that will allow image requests to me queued and processed asynchronously. When the image or images have been processed, the results will be placed on a message queue (as low to medium priority - see [002_ADR_Priority_Queue](../ADR/002_ADR_Priority_Queue.md). 
+There are a number of reasons that a Fishy Watch user (farmer, support engineer, etc.) may wish to obtain a still image or images from the underwater cameras. For example, a treatment for a particular parasite may have been administered and the user wishes to obtain some images of the fish to determine how effective the treatment was.
+In the low bandwidth, patchy environments we expect Fishy Watch to be deployed in, there may be times when a synchronous response to such a request is not possible. It may be also the case that we which to control the rate at which these types of requests are processed. To this end, we will provide an API that will allow image requests to me queued and processed asynchronously. When the image or images have been processed, the results will be placed on a message queue (as low to medium priority) - see [002_ADR_Priority_Queue](../ADR/002_ADR_Priority_Queue.md). 
   
 
 ## Assumptions  

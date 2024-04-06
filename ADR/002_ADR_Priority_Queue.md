@@ -6,7 +6,7 @@ proposed
 
 ## Context
 
-The Fish Watch system operates in challenging environments as discussed in 001_ADR_Edge_Computing. These conditions may lead to WAN downtime and messages being lost unless some provision is made to store them locally until they can be sent once connectivity is re-established.
+The Fishy Watch system operates in challenging environments as discussed in 001_ADR_Edge_Computing. These conditions may lead to WAN downtime and messages being lost unless some provision is made to store them locally until they can be sent once connectivity is re-established.
 The messages being sent from the system may be of various times and of varying priority. E.G. Alerts related to anomalous pH or oxygen levels may be considered more important than responses to image requests. If a large number of messages have be cached locally awaiting WAN connectivity it is desirable to prioritize the sending of the Alerts over the upload of images. In addition to being of higher priority, it is expected that alerts will be smaller in terms of message length than, say, an image upload and so may get 'drowned out' by these larger messages if no compensating steps are taken.   
 
 ## Decision
