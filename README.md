@@ -1,5 +1,7 @@
 # O'Reilly Architectural Katas - Fishy Watch
 
+![Fish_farm_Amarynthos_Euboea_Greece_-_edit1](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Fish_farm_Amarynthos_Euboea_Greece_-_edit1.jpg/1000px-Fish_farm_Amarynthos_Euboea_Greece_-_edit1.jpg "Fish_farm_Amarynthos_Euboea_Greece_-_edit1")
+
 ## The Team
 
 Hi!, We are the Fresh Food People. A group of Solution Architects from WooliesX, the Tech arm of Woolworths Australia. Our humble little band is made up of:
