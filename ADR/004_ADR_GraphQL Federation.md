@@ -1,6 +1,6 @@
 # ADR004 - Use of GraphQL Federation for Service composition
 ## Status
-proposed
+Accepted
 ## Context
 Farmers may utilise various devices, including rugged industrial devices designed for use on the sea during harvest. This necessitates a UI pattern that is adaptable enough to accommodate a wide range of frontend solutions. 
 
