@@ -173,3 +173,9 @@ A bounded context canvas for Farm Management is shown below in Fig 4.
 ![Fishy Watch Farm Management Bounded Context](Diagrams/BoundedContexts/FarmManagement-BoundedContext.jpg "Fig. 4 - Fishy Watch Farm Management Bounded Context")
 
 **<p style="text-align: center;">Fig. 4 - Fishy Watch Farm Management Bounded Context Canvas </p>**
+
+A bounded context canvas for Onsite Data Processing is shown below in Fig 5.
+
+![Fishy Watch Onsite Processing Bounded Context](Diagrams/BoundedContexts/OnsiteDataProcessing-BoundedContext.jpg "Fig. 5 - Fishy Watch Onsite Processing Bounded Context")
+
+**<p style="text-align: center;">Fig. 5 - Fishy Watch Onsite Processing Bounded Context Canvas </p>**
