@@ -9,6 +9,13 @@ advanced warnings of adverse weather events that are expected.
 - For large customers, they will want to be able to drive insights across a number of farms.
 - It’s vital that alerts be generated in a timely manner - a sharp degradation in water quality or adverse weather events could have massive implications if the farmer doesn’t have enough warning.
 
+## Non Functional Requirements
+- Performance: Ensure the system processes data and triggers alerts in real-time to prevent potential losses. Maintain high responsiveness in dashboard interactions and data visualization.
+- Scalability: Design to efficiently handle data from a few to over a million fish across multiple farms and enclosures. Scale dynamically as new farms, enclosures, and devices are added.
+- Reliability: Achieve high availability, especially for the alerting mechanisms and real-time data feeds.
+- Security: Implement strong security measures to protect sensitive data about farms and livestock.
+- Extendibility: Design the system to easily integrate with other types of livestock monitoring in the future.
+
 ## Assumptions
 - Each enclosure will only have one type of fish species.
 - Fish behaviour and water quality etc will become richer over time as we are able to deploy more powerful devices
