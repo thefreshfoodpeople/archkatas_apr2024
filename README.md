@@ -170,7 +170,7 @@ We have identified a number of bounded context within the Fishy Watch domain. An
 
 **<p style="text-align: center;">Fig. 3 - Fishy Watch Bounded Context</p>**
 
-A bounded context canvas for Farm Management is shown below in Fig 4.
+A bounded context canvas for Farm Management is shown below in Fig. 4.
 
 ![Fishy Watch Farm Management Bounded Context](Diagrams/BoundedContexts/FarmManagement-BoundedContext.jpg "Fig. 4 - Fishy Watch Farm Management Bounded Context")
 
@@ -181,6 +181,12 @@ A bounded context canvas for Onsite Data Processing is shown below in Fig 5.
 ![Fishy Watch Onsite Processing Bounded Context](Diagrams/BoundedContexts/OnsiteDataProcessing-BoundedContext.jpg "Fig. 5 - Fishy Watch Onsite Processing Bounded Context")
 
 **<p style="text-align: center;">Fig. 5 - Fishy Watch Onsite Processing Bounded Context Canvas </p>**
+
+## Architectural Styles
+
+We chose an event driven / microservices approach for Fishy Watch based, primarily, on the fault tolerance, scalability and evolvability characteristics they provide. How these architectural styles compare with alternatives is illustrated in Fig. 6 below.     
+
+![Fishy Watch Architectural Styles](Diagrams/FishyWatch-ArchitecturalStyle.png "Fig. 6 - Fishy Watch Architectural Styles")
 
 # System Ad
 
