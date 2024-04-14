@@ -1,6 +1,6 @@
 # ADR001 - Use of Edge Computing To Process Data Locally
 ## Status
-Proposed
+Accepted
 ## Context
 The devices providing telemetry and video data for the Fishy Watch system are operating in globally distributed locations. A fish farm may be within the confines of a lake or somewhere out to sea and be exposed to the forces of nature. These environments are likely to be challenging and loss of internet connectivity is to be expected from time to time. 
 ## Decision
